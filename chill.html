@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+    <meta name="robots" content="noindex, nofollow" />
+		<title>Chill</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+		<link rel="stylesheet" href="css/reveal.css">
+	</head>
+	<body>
+		<div class="reveal">
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+				<section>
+					<h1>First Slide</h1>
+					<h3>Wednesday, 12th August 2020</h3>
+					<p>
+						<small>Just Another Person</small>
+					</p>
+				</section>
+				<section>
+					<h2>Agenda</h2>
+					<ul>
+						<li>Introduction, Maybe</li>
+						<li>Item 1</li>
+					</ul>
+				</section>
+
+				<section>
+					<h2>Introduction</h2>
+					<p>
+						Highlight <span class="fragment highlight-red">RED</span>, <span class="fragment highlight-blue">BLUE</span>
+					</p>
+				</section>
+
+				<!-- Example of nested vertical slides -->
+				<section>
+					<section>
+						<h2>P1</h2>
+						<p>P1.1</p>
+						<p>
+					</section>
+					<section>
+						<h2>P1.2</h2>
+            <p>Nothing here, move along</p>
+					</section>
+					<section>
+						<h2>P1.3</h2>
+            <p>Nothing here, move along</p>
+					</section>
+				</section>
+
+				<section data-transition="slide" data-background="#4d7e65" data-background-transition="zoom">
+					<h2><a href="https://revealjs.com/" target="_blank">RevealJS Documentation</a></h2>
+					<p>Text</p>
+					<ul>
+						<li>Item 1</li>
+						<li class="fragment current-visible">Item 2</li>
+						<li class="fragment current-visible">Item 3</li>
+				</section>
+
+				<section>
+					<h2>What's Next</h2>
+					<p>Learn, Learn, Learn</p>
+					<blockquote class="fragment">
+						&ldquo;Ask, and it will be given to you; seek, and you will find; knock, and it will be opened to you.&rdquo;
+					</blockquote>
+				</section>
+
+				<section style="text-align: left;">
+					<h1>THE END <small class="fragment">Is it really?</small></h1>
+					<p class="fragment">
+						- <a href="http://www.google.com" target="_blank">Google</a><br>
+					</p>
+					<p class="fragment">
+						<small>Or ask...him?</small>
+					</p>
+				</section>
+			</div>
+		</div>
+		<script src="js/reveal.js"></script>
+		<script>
+
+			// Full list of configuration options available at:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				transition: 'convex', // none/fade/slide/convex/concave/zoom
+
+				// Optional reveal.js plugins
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true },
+					{ src: 'plugin/notes/notes.js', async: true }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>
